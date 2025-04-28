@@ -8,12 +8,10 @@ public class Audio {
 	private int classificacao;
 	
 	public void curtir() {
-		System.out.println("Você curtiu " + titulo);
 		this.curtida++;
 	}
 	
 	public void reproduzir() {
-		System.out.println("Você reproduziu " + titulo);
 		this.totalReproducoes++;
 	}
 	
@@ -39,6 +37,10 @@ public class Audio {
 
 	public int getCurtida() {
 		return curtida;
+	}
+
+	public int getClassificacao() {
+		return classificacao;
 	}
 
 	@Override
